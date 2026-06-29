@@ -1,0 +1,34 @@
+{
+  "id": "occ-schema-002",
+  "title": "Define lesson + exercise JSON Schemas (+ CI validation)",
+  "project": "open-coding-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "programming", "computer-science", "open-education", "accessibility"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise must be uniformly machine-readable and provably solvable: the reference solution is executed against its tests in CI, which sets solutionVerified. Correctness must be enforceable as data, not by hand, because a broken or unsolvable exercise actively mis-teaches beginners.",
+  "objective": "Define and publish versioned JSON Schemas for a lesson and an exercise, wired into CI via AJV, that capture all fields and enforce the correctness, license, and provenance invariants.",
+  "acceptanceCriteria": [
+    "Lesson schema covers id, slug, title, language, level, objectives, prerequisites, concepts, body, runnableExamples, exercises, license, version, lastReviewed, authors, reviewers, sources.",
+    "Exercise schema covers id, lessonId, language, prompt, starterCode, referenceSolution, tests, hints, rubric, difficulty, expectedRuntimeMs, resourceLimits, solutionVerified, isOriginal, license, version, lastReviewed, authors, reviewers.",
+    "language, level, and difficulty are closed enums; license is constrained to a closed allow-list (original, CC0, CC-BY-4.0, CC-BY-SA-4.0, public-domain, MIT); any other/blank value is invalid.",
+    "solutionVerified is documented as CI-set (never hand-edited); an exercise missing tests or referenceSolution fails validation.",
+    "Non-original media/code (isOriginal:false) requires a verified source URL.",
+    "AJV validation runs in CI and fails on any invalid lesson/exercise.",
+    "pnpm build && pnpm test && pnpm lint pass."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "C:\\code\\elyos\\planning\\projects\\open-coding-curriculum\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md"
+  ],
+  "output": "A merged PR adding the lesson + exercise JSON Schemas, AJV-based validation script, and CI wiring, with the schemas documented in the repo.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
