@@ -1,0 +1,41 @@
+{
+  "id": "occ-research-505",
+  "title": "Learner-gain survey instrument + outcome dashboard",
+  "project": "open-coding-curriculum",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "community-outreach"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The project's primary success metric — 'at least 75% of surveyed learners agree they can do something they could not before' — depends on a survey instrument that does not yet exist. Without it, the learning-gain metric cannot be reported. The survey must be designed to collect ≥ 25 responses over a rolling 90-day post-adoption window.",
+  "objective": "Design a learner-gain survey instrument for use by adopting partners, targeting ≥ 25 respondents over a rolling 90-day post-adoption window, with questions that measure whether learners can now do things they could not before; and specify an outcome dashboard for tracking aggregate results.",
+  "acceptanceCriteria": [
+    "Survey instrument is designed with questions targeting the learning-gain metric: 'I can now write a program that does X, which I could not do before' (Likert-scale + open-ended follow-up).",
+    "Survey is designed to be administered by the education partner post-adoption (not the project team) to minimize Hawthorne effect.",
+    "Survey design targets ≥ 25 respondents over a rolling 90-day window; sampling strategy (e.g. end-of-session, post-module completion) is specified.",
+    "Target response rate (≥ 30%) and minimum sample size are documented with rationale.",
+    "An outcome dashboard specification is produced: what metrics are tracked, how they are aggregated, and how the 75%-agree threshold is calculated.",
+    "Survey instrument is reviewed for clarity and bias by at least one person with a background in education or evaluation methodology.",
+    "Privacy: no personally identifiable learner data is collected; survey is anonymous or pseudonymous."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://carpentries.org/assessment/"
+  ],
+  "output": "A committed survey instrument (question bank, administration guide, privacy notes) and an outcome dashboard specification document.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "occ-lesson-302",
+  "title": "JavaScript beginner module (≈ 8–10 lessons + graded exercises)",
+  "project": "open-coding-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The JavaScript module is the second language in the curriculum and the proof that the language-agnostic content model works. Adding it must require only a JS runner adapter + original JS content, with no schema changes. The module must cover the same conceptual ground as the Python module (variables, types, control flow, functions) but using JavaScript idioms.",
+  "objective": "Author a complete JavaScript beginner module of approximately 8–10 lessons (variables/let/const, types/coercion, operators, conditionals, loops, functions, arrays, objects, and basic error handling) — each with original prose, at least one runnable example, and at least one graded exercise — demonstrating the language-agnostic model.",
+  "acceptanceCriteria": [
+    "At least 8 lessons are delivered covering JavaScript beginner fundamentals: variables (let/const/var distinction), types and coercion, operators, conditionals, loops, functions, arrays, and objects.",
+    "Every lesson has at least 1 runnable example and at least 1 graded exercise with solutionVerified:true (CI-set using the JS adapter) and starter code that does NOT pass the tests.",
+    "All prose is original; at least 2 authoritative cited sources per lesson (ECMAScript spec or MDN cited but not copied — MDN is CC-BY-SA and must be cited, not copied into CC-BY prose).",
+    "Each lesson is schema-valid; no new schema fields or contract changes were required to add JavaScript.",
+    "Technical correctness and pedagogy review by non-authors for all lessons.",
+    "Examples are neutral/inclusive; prerequisites honestly stated."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://tc39.es/ecma262/",
+    "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+  ],
+  "output": "A set of merged lesson documents (with exercise files) for the JavaScript beginner module, each schema-valid, correctness-verified via the JS adapter, and technically + pedagogically reviewed.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

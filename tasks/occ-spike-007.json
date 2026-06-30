@@ -1,0 +1,42 @@
+{
+  "id": "occ-spike-007",
+  "title": "SSG selection spike (Astro/Eleventy/other): WCAG support, runner-embedding ease, build determinism — decide before M2",
+  "project": "open-coding-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility",
+    "web-development"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The learner site (M2) must embed the in-browser WASM runner and meet WCAG-AA accessibility targets. The wrong SSG choice discovered at M2 build time would require a costly rewrite. The spike must conclude before M2 site work (occ-site-201) begins.",
+  "objective": "Evaluate candidate SSGs (Astro, Eleventy, and any other viable option) against weighted criteria — WCAG-AA support, WASM runner embedding ease, build determinism, supply-chain footprint, maintenance burden — and record a binding SSG decision.",
+  "acceptanceCriteria": [
+    "At least Astro and Eleventy are evaluated; additional candidates may be considered.",
+    "Evaluation criteria are applied and weighted: WCAG-AA support, ease of embedding the Pyodide WASM runner, build determinism/reproducibility, supply-chain footprint, and maintenance burden.",
+    "Each candidate is prototyped to the extent needed to validate the runner-embedding claim.",
+    "A binding SSG decision is recorded with rationale before any M2 site build task (occ-site-201) begins.",
+    "Spike report is reviewed by the Maintainer."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://astro.build/",
+    "https://www.11ty.dev/",
+    "https://www.w3.org/WAI/standards-guidelines/wcag/"
+  ],
+  "output": "A spike report committed to the repository with SSG evaluation results, weighted scores, the binding SSG choice, and the rationale for that choice.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

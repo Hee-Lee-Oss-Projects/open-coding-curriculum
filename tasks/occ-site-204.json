@@ -1,0 +1,40 @@
+{
+  "id": "occ-site-204",
+  "title": "Deploy live learner site (static hosting) + canonical attribution",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility",
+    "web-development"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). A site that only exists on a developer's machine has not delivered on the 'zero install, zero account' promise. Deploying to a stable public URL completes the M2 Definition of Done and is a prerequisite for partner adoption.",
+  "objective": "Deploy the static learner site to a stable public hosting environment, set up a canonical URL, and add canonical attribution that satisfies the CC-BY license requirement for the corpus.",
+  "acceptanceCriteria": [
+    "Static site is deployed to a public, stable URL accessible by learners without login or install.",
+    "Deployment is automated via CI on every merge to main.",
+    "Canonical attribution for the CC-BY prose is present on every lesson page (author list, license link, source URL).",
+    "HTTPS is enforced; no learner data is transmitted to the server (static hosting only).",
+    "The public URL is recorded in the repository README and in the corpus provenance manifest."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "output": "A merged PR and a live learner site at a public URL with automated deployment, HTTPS, and canonical attribution on all lesson pages.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

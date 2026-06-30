@@ -1,0 +1,43 @@
+{
+  "id": "occ-repo-004",
+  "title": "Scaffold repo (TS/ESM/pnpm, lint, validate, CI wiring)",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Before any lesson can be authored or validated the repository needs a working TypeScript/ESM/pnpm workspace with lint, schema validation CI, and the correctness-gate CI wiring in place. This is the prerequisite for every other task that delivers a PR.",
+  "objective": "Set up the repository's TypeScript/ESM/pnpm workspace, linting configuration, AJV schema validation script, and CI pipeline so that pnpm build && pnpm test && pnpm lint pass on an empty but correctly structured repo.",
+  "acceptanceCriteria": [
+    "Repository uses TypeScript, ESM modules, and pnpm workspaces; package.json scripts are defined for build, test, and lint.",
+    "A lint configuration (ESLint or equivalent) is committed and passes on the scaffolded code.",
+    "An AJV-based schema validation script is wired into CI and runs on every PR.",
+    "CI pipeline (GitHub Actions or equivalent) runs pnpm build && pnpm test && pnpm lint on every push and PR; the pipeline file is committed.",
+    "pnpm build && pnpm test && pnpm lint all pass on the scaffolded repo with no content yet.",
+    "Directory structure matches the authoring format decided in occ-decide-000.",
+    "Maintainer reviews and approves before merge."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://pnpm.io/workspaces",
+    "https://www.typescriptlang.org/",
+    "https://ajv.js.org/"
+  ],
+  "output": "A merged PR adding the complete repository scaffold: pnpm workspace config, TypeScript setup, lint config, AJV validation script, and CI pipeline configuration.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

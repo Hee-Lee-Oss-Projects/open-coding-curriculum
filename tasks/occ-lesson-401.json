@@ -1,0 +1,39 @@
+{
+  "id": "occ-lesson-401",
+  "title": "Third-language beginner module start (≥ 5 lessons + exercises; language partner-driven)",
+  "project": "open-coding-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The third language demonstrates that the language-agnostic model scales beyond two languages. The choice of language is partner-driven (SQL for data beginners, a typed teaching language, or C basics are candidates). The in-browser runner viability for the third language must be confirmed by a spike before committing to the module.",
+  "objective": "Author at least 5 lessons in a third programming language (chosen with partner input), each with at least one graded exercise, using the existing schema and runner contract without changes — demonstrating the language-agnostic model at scale.",
+  "acceptanceCriteria": [
+    "At least 5 lessons are delivered in a third programming language (language chosen in consultation with the partner; document the rationale).",
+    "In-browser runner viability for the third language is confirmed by a spike before lesson authoring commits.",
+    "Every lesson has at least 1 runnable example and at least 1 graded exercise with solutionVerified:true and starter code that does NOT pass the tests.",
+    "No schema changes are required to accommodate the third language; only a new runner adapter is added.",
+    "All prose is original; at least 2 authoritative cited sources per lesson.",
+    "Technical + pedagogy review by non-authors for all lessons."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "At least 5 merged lesson documents (with exercise files) for the third-language beginner module, each schema-valid, correctness-verified, and reviewed.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "occ-guide-001",
+  "title": "Write pedagogy + style guide (lesson/exercise templates, hint convention, refusal/defensive-only rules)",
+  "project": "open-coding-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Without a shared pedagogy and style guide, every author will make different choices on lesson structure, hint depth, exercise difficulty, and inclusive language — leading to a curriculum that is inconsistent and hard to review. The guide is also the basis for the pedagogy checklist that every reviewer must sign item-by-item.",
+  "objective": "Produce and merge a pedagogy and style guide covering the lesson template, the exercise template, the hint/feedback convention, inclusive/plain-language requirements, the reviewer checklist, and the refusal/defensive-only rules for security content.",
+  "acceptanceCriteria": [
+    "The guide defines the lesson template: single clear objective, prerequisite list, plain-language body, worked example before the exercise, and a cited sources section.",
+    "The guide defines the exercise template: prompt, starter code (must not already pass the tests), reference solution, ordered hints that scaffold without spoiling, rubric, and difficulty level.",
+    "Hint convention is specified: hints are ordered from general to specific; none gives away the full solution before the last hint; each hint points toward the next conceptual step.",
+    "Inclusive/plain-language requirements are specified: neutral examples, no assumed cultural knowledge, jargon introduced before use, short sentences.",
+    "The pedagogy reviewer checklist is provided as a signed item-by-item form (not free-form 'looks good').",
+    "Refusal/defensive-only rules state that security topics are defensive only and that any request to author malware, exploits, surveillance, or abuse-enabling content is refused and flagged.",
+    "The guide is pedagogy-reviewed by someone other than the author before merge."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "A merged pedagogy and style guide document in the repository, including lesson template, exercise template, hint convention, inclusive-language requirements, reviewer checklist, and refusal rules.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

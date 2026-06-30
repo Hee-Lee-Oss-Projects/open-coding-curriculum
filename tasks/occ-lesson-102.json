@@ -1,0 +1,41 @@
+{
+  "id": "occ-lesson-102",
+  "title": "Python module batch B: conditionals, loops, strings, lists (4 lessons + exercises)",
+  "project": "open-coding-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Batch B introduces the control-flow and data-structure primitives that let beginners write non-trivial programs. Conditionals and loops are the most common stumbling blocks for beginners; the lessons must scaffold carefully and the exercises must give correct, instant feedback via the graded runner.",
+  "objective": "Author four Python beginner lessons covering conditionals (if/elif/else), loops (for/while), string operations (slicing, methods, formatting), and lists (indexing, slicing, mutation, iteration) — each with original prose, at least one runnable example, and at least one graded, solutionVerified exercise.",
+  "acceptanceCriteria": [
+    "Four lessons are delivered: (1) conditionals (if/elif/else, comparison operators, boolean logic), (2) loops (for with range/iterables, while, break/continue), (3) strings (indexing, slicing, common methods, f-strings), (4) lists (indexing, slicing, append/remove, iteration).",
+    "Every lesson has at least 1 runnable example and at least 1 graded exercise with solutionVerified:true (CI-set) and starter code that does NOT pass the tests.",
+    "Hints scaffold toward the solution without revealing it; each hint points toward the next conceptual step.",
+    "All prose is original; at least 2 authoritative cited sources per lesson; no copied prose.",
+    "Each lesson is schema-valid; technical + pedagogy review by non-authors.",
+    "Examples are neutral/inclusive; single clear objective per lesson; prerequisites honestly stated."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://docs.python.org/3/tutorial/controlflow.html",
+    "https://docs.python.org/3/tutorial/datastructures.html"
+  ],
+  "output": "Four merged lesson documents (with associated exercise files) for conditionals, loops, strings, and lists in Python, each schema-valid, correctness-verified, and reviewed.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

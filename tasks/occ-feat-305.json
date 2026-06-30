@@ -1,0 +1,40 @@
+{
+  "id": "occ-feat-305",
+  "title": "Hint/feedback system: ordered hints + actionable failure diagnostics in the runner UI",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility",
+    "web-development"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The difference between a learner who gets unstuck and one who gives up often comes down to the quality of feedback. Ordered hints that scaffold without spoiling, and actionable failure diagnostics that say 'your loop ran 4 times, expected 5' rather than just 'wrong', are the feedback design that makes the curriculum actually teach.",
+  "objective": "Implement ordered hints (revealed progressively on request, scaffolding toward the solution without spoiling it) and actionable failure diagnostics (specific, constructive error messages from failed test cases) in the in-browser runner UI.",
+  "acceptanceCriteria": [
+    "Ordered hints are displayed one at a time on learner request; hints are revealed in the order defined in the exercise, from most general to most specific.",
+    "No hint reveals the full solution before the final hint; the final hint may reveal the key insight but not the full code.",
+    "Failure diagnostics show which test case(s) failed, what the expected vs actual output was, and a constructive (non-discouraging) framing.",
+    "Hint reveal and diagnostic display are keyboard-accessible and screen-reader-friendly.",
+    "pnpm build && pnpm test && pnpm lint pass."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://www.w3.org/WAI/WCAG21/quickref/"
+  ],
+  "output": "A merged PR adding the ordered-hint reveal system and actionable failure diagnostics to the in-browser runner UI.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

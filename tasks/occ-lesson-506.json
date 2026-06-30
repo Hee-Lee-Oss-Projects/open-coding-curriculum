@@ -1,0 +1,40 @@
+{
+  "id": "occ-lesson-506",
+  "title": "Additional beginner modules (data/SQL basics, files, simple projects)",
+  "project": "open-coding-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Once two language modules are solid, additional content widens the curriculum to cover practical next-steps topics: reading/writing files, basic data manipulation (SQL or pandas basics), and small complete projects that integrate concepts. These extend the curriculum's reach without changing its model.",
+  "objective": "Author additional beginner modules covering practical next-steps topics — file I/O in Python, basic SQL or data manipulation, and at least one small complete project that integrates multiple lesson concepts — each following the same schema, correctness gate, and review process.",
+  "acceptanceCriteria": [
+    "At least 3 lessons are delivered covering practical next-steps topics; the specific topic set is confirmed with the education partner before authoring.",
+    "Every lesson has at least 1 runnable example and at least 1 graded exercise with solutionVerified:true and starter code that does NOT pass the tests.",
+    "At least one lesson delivers a 'small complete project' that integrates ≥ 3 concepts from earlier lessons.",
+    "All prose is original; at least 2 authoritative cited sources per lesson.",
+    "Schema-valid; technical + pedagogy review by non-authors.",
+    "Partner confirms the chosen topic set is relevant to their learners before authoring begins."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://docs.python.org/3/tutorial/inputoutput.html"
+  ],
+  "output": "A set of merged lesson documents for additional beginner topics (file I/O, data basics, and a complete project), each schema-valid, correctness-verified, and reviewed.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

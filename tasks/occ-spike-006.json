@@ -1,0 +1,40 @@
+{
+  "id": "occ-spike-006",
+  "title": "WASM runner spike (Pyodide load size/perf, lazy-load, cache, offline fallback)",
+  "project": "open-coding-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Pyodide's WASM bundle is large and could severely degrade the beginner experience on slow connections. If lazy-load and caching strategies are not proven viable in a spike before the full runner is built, the in-browser runner (occ-runner-104) may need a redesign.",
+  "objective": "Spike the Pyodide WASM runner to measure load size and performance characteristics, evaluate lazy-load and caching strategies, identify the graceful offline/no-WASM fallback approach, and record a decision on whether Pyodide is viable for the in-browser runner.",
+  "acceptanceCriteria": [
+    "Pyodide bundle load size is measured on a simulated slow connection (≤ 4 Mbps); results are recorded.",
+    "Lazy-load and service-worker caching strategies are prototyped and their impact on first-load vs. repeat-load time is measured.",
+    "A graceful fallback ('download to run locally') is designed for environments where WASM is unavailable.",
+    "Spike concludes with a written recommendation: proceed with Pyodide (with noted load mitigations) or pivot to an alternative.",
+    "Results and recommendation are reviewed by the Maintainer before proceeding to occ-runner-104."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://pyodide.org/en/stable/",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API"
+  ],
+  "output": "A spike report committed to the repository documenting Pyodide load measurements, lazy-load/cache findings, offline fallback design, and a go/no-go recommendation for the in-browser runner.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

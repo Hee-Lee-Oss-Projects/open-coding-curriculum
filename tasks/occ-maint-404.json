@@ -1,0 +1,38 @@
+{
+  "id": "occ-maint-404",
+  "title": "Re-review cadence: refresh lessons past their lastReviewed window",
+  "project": "open-coding-curriculum",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Lesson content can become outdated as language idioms, best practices, or documentation evolve. The lastReviewed date on each lesson drives a re-review cadence that ensures no lesson drifts past its review window unchecked. This is the sustainability mechanism that keeps the corpus accurate over time.",
+  "objective": "Identify all lessons whose lastReviewed date has passed the review window, re-review each for technical accuracy and pedagogy currency, update lastReviewed on passing lessons, and log issues found for any that require content updates.",
+  "acceptanceCriteria": [
+    "All lessons with a lastReviewed date older than the review window (defined in the pedagogy guide) are identified.",
+    "Each identified lesson is re-reviewed for technical accuracy (idiomatic and correct for the current language version) and pedagogy currency (still beginner-appropriate, no broken links in citations).",
+    "Lessons that pass re-review have their lastReviewed date updated in the schema.",
+    "Lessons that fail re-review are flagged with specific issues and a follow-up task is created for each fix.",
+    "A summary of the re-review cycle (lessons reviewed, pass/fail, issues found) is committed to the maintenance log."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "A committed maintenance log documenting the re-review cycle outcomes, updated lastReviewed dates in lesson files, and any follow-up fix tasks created.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

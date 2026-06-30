@@ -1,0 +1,38 @@
+{
+  "id": "occ-research-106",
+  "title": "Partner outreach packet + log first conversations (library/nonprofit/school/Carpentries)",
+  "project": "open-coding-curriculum",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "community-outreach"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). A confirmed education partner is the true Definition of Shipped for the project. Partner outreach must begin at M1 to allow enough lead time before the G1 gate decides whether M2 proceeds as a hosted site or falls back to corpus + offline bundle. verifiedNeed remains false until a partner confirms in writing.",
+  "objective": "Create a reusable outreach packet describing the curriculum, its licenses, the zero-install learner model, and the adoption ask; send it to at least one candidate partner organization; and log the outcome and next steps of at least one partner conversation.",
+  "acceptanceCriteria": [
+    "Outreach packet is produced and covers: what the curriculum is, who it helps, zero-install/zero-account learner model, CC-BY prose + MIT code licensing, adoption ask (use it with learners and provide a use report), and contact information.",
+    "At least 1 outreach packet is sent to a candidate partner (target: library digital-literacy program, nonprofit coding school, Carpentries-style org, under-resourced school CS department, or refugee/displaced-learner upskilling org).",
+    "At least 1 partner conversation is logged with: partner name/org, date, summary of conversation, outcome, and next steps.",
+    "Honest status is recorded: verifiedNeed flips to true only on written partner confirmation; until then it remains false."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://carpentries.org/"
+  ],
+  "output": "A committed document containing the reusable outreach packet and a log of at least one partner conversation with outcome and next steps.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

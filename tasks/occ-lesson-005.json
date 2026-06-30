@@ -1,0 +1,44 @@
+{
+  "id": "occ-lesson-005",
+  "title": "Reference Python lesson + graded exercise: \"variables & printing\" (low-risk exemplar, end-to-end)",
+  "project": "open-coding-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Before fan-out authoring of the full Python module can begin, an end-to-end exemplar lesson must exist that proves the schema, runner, and review pipeline work together correctly. This lesson also sets the quality bar all subsequent lessons must match.",
+  "objective": "Author the first complete Python lesson ('variables & printing') with at least one graded exercise, original prose, authoritative citations, and pass the correctness gate (solutionVerified:true), technical review, and pedagogy review — proving the full authoring pipeline end-to-end.",
+  "acceptanceCriteria": [
+    "Lesson prose is 100% original; no prose copied or paraphrase-laundered from copyrighted sources.",
+    "At least 2 authoritative independent cited sources are included (Python official docs preferred).",
+    "Lesson includes at least 1 runnable example and at least 1 graded exercise.",
+    "The exercise has a reference solution that passes its test suite (solutionVerified:true set by CI).",
+    "The starter code does NOT already pass the exercise tests.",
+    "Lesson and exercise are schema-valid against the lesson and exercise JSON Schemas.",
+    "Pedagogy checklist is signed off by a reviewer who is not the author.",
+    "Technical correctness is reviewed by a reviewer who is not the author.",
+    "Examples are neutral/inclusive; prerequisites are honestly stated; single clear objective."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://docs.python.org/3/tutorial/introduction.html",
+    "https://docs.python.org/3/library/functions.html#print"
+  ],
+  "output": "A merged lesson document (and associated exercise file) for 'variables & printing' in Python, schema-valid, correctness-verified, and technically + pedagogically reviewed.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

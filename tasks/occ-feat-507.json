@@ -1,0 +1,41 @@
+{
+  "id": "occ-feat-507",
+  "title": "Public structured-export API over the corpus",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "data"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). If downstream demand for programmatic access to the corpus emerges (course builders, LMS integrations, research tools), a structured-export API makes the CC-BY corpus far more useful than a static file download. This is deferred until downstream demand is confirmed to avoid over-engineering.",
+  "objective": "Design and implement a public, read-only structured-export API over the validated curriculum corpus, enabling downstream tools to query lessons, exercises, and metadata programmatically — only if confirmed downstream demand exists.",
+  "acceptanceCriteria": [
+    "At least one confirmed downstream consumer (course builder, LMS, or research tool) is documented before implementation begins.",
+    "API is read-only and serves only the validated, published corpus (no draft or unverified content).",
+    "API responses include all license and provenance metadata (outputLicense, isOriginal, sources) so downstream reusers can comply with CC-BY requirements.",
+    "API is versioned; breaking changes require a new version path.",
+    "API documentation is public and includes usage examples and attribution requirements.",
+    "No learner data or PII is exposed by or stored by the API.",
+    "pnpm build && pnpm test && pnpm lint pass."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "output": "A deployed, documented, versioned read-only API over the validated curriculum corpus, with CC-BY provenance metadata and no learner PII.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "occ-i18n-501",
+  "title": "Localization framework + first translated lessons",
+  "project": "open-coding-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Once the curriculum is proven with English content, localizing it into other languages dramatically expands the beneficiary pool. The schema must anticipate i18n without requiring it in early phases; this task adds the localization framework (code) and produces the first set of translated lessons (writing/translation), gated on an i18n schema decision.",
+  "objective": "Add a localization framework to the schema and tooling (supporting multiple UI language translations of lesson content) and produce the first translated set of lessons in at least one non-English language, demonstrating the i18n model end-to-end.",
+  "acceptanceCriteria": [
+    "An i18n schema decision is recorded before authoring begins: how language variants are modeled in the lesson schema (e.g. a locale field, a translations map, or parallel files).",
+    "The localization framework is implemented: the schema supports at least one non-English locale, the site renders locale-selected content, and the tooling validates translated content.",
+    "At least 3 lessons from the Python module are translated into a non-English language by a qualified human translator; no machine-only translations without human review.",
+    "Translated lessons are schema-valid and carry translator attribution and a locale tag.",
+    "Technical accuracy of translated content is reviewed by a reviewer fluent in the target language.",
+    "pnpm build && pnpm test && pnpm lint pass."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://www.w3.org/International/questions/qa-i18n"
+  ],
+  "output": "A merged PR adding the localization framework and at least 3 translated lessons in a non-English language, with translator attribution and schema-valid locale metadata.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

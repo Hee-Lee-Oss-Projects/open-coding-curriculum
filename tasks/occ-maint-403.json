@@ -1,0 +1,38 @@
+{
+  "id": "occ-maint-403",
+  "title": "Runtime-drift re-check: re-run every solutionVerified against updated pinned runtimes",
+  "project": "open-coding-curriculum",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). A Python or JavaScript version upgrade can silently break exercises that previously passed — the 'solutionVerified:true' badge becomes a lie. The runtime-drift re-check re-runs every reference solution against the current pinned runtimes and flags any newly failing exercise before it stays published with a stale verification.",
+  "objective": "Re-run every exercise's reference solution against the current pinned runtime versions; identify and fix any exercise whose solution no longer passes; update pinned runtime version metadata.",
+  "acceptanceCriteria": [
+    "Every exercise's reference solution is re-run against the current pinned Python and JavaScript runtime versions.",
+    "Any exercise whose reference solution no longer passes is flagged and fixed (solution updated or runtime version pinned/downgraded with documented rationale) before it can remain published.",
+    "Pinned runtime version metadata is updated for every exercise checked.",
+    "CI gate (occ-code-303) re-confirms solutionVerified:true for all exercises after the re-check.",
+    "The re-check results (pass count, failures found, fixes applied) are committed in a maintenance log."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "A merged PR with updated runtime version metadata, fixed exercises (if any), and a maintenance log of the re-check results.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

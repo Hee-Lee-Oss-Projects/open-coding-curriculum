@@ -1,0 +1,41 @@
+{
+  "id": "occ-decide-000",
+  "title": "Decide authoring format (JSON vs Markdown+front-matter) — schema/tooling/runner depend on it",
+  "project": "open-coding-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The very first structural decision — authoring format — must be locked before any lesson is written or any schema/runner built, because it determines the shape of every downstream artifact. A wrong or deferred decision forces a painful migration later.",
+  "objective": "Evaluate JSON-first vs Markdown-with-front-matter (compiled to JSON) as the canonical authoring format, weigh schema complexity, tooling ergonomics, and runner coupling, and record a binding decision with rationale before any seed authoring begins.",
+  "acceptanceCriteria": [
+    "Both options (JSON-first and Markdown+front-matter compiled to JSON) are evaluated against criteria: schema validation complexity, author ergonomics, runner coupling, build determinism, and accessibility tooling fit.",
+    "A binding decision is recorded in a decision document committed to the repository, with explicit rationale for the chosen format and the trade-offs accepted.",
+    "The decision is made before any seed lesson authoring (occ-lesson-005) or schema authoring (occ-schema-002) begins.",
+    "Schema, validation tooling, and runner contracts are confirmed to target the chosen format.",
+    "Document is technically reviewed by the Maintainer."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://ajv.js.org/",
+    "https://www.11ty.dev/",
+    "https://astro.build/"
+  ],
+  "output": "A committed decision document in the repository recording the chosen authoring format, evaluation criteria, rationale, and implications for schema, tooling, and runner design.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}
