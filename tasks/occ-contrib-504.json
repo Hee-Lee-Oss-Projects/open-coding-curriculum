@@ -1,0 +1,38 @@
+{
+  "id": "occ-contrib-504",
+  "title": "External contribution + review-scaling model (esp. correctness gate)",
+  "project": "open-coding-curriculum",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). When external contributions open, the review burden — especially the correctness gate and pedagogy checklist — must scale. Without a documented contribution model, well-meaning external authors will bypass the correctness gate or submit content that cannot be reviewed in time, creating a backlog and quality risk.",
+  "objective": "Design and document a scalable external contribution model that specifies how external authors submit lessons/exercises, how the correctness gate is applied to contributed content, how reviewer rotation works, and what the review SLA is.",
+  "acceptanceCriteria": [
+    "Contribution model specifies: how to submit a new lesson (PR format, required files, checklist), the minimum bar to pass CI (schema validity, correctness gate, starter-must-fail), and the reviewer assignment process.",
+    "Correctness gate is non-negotiable for external contributions: any lesson/exercise that fails the CI correctness gate cannot be merged regardless of author.",
+    "Reviewer rotation model is specified: how technical and pedagogy reviewers are recruited, rotated, and tracked; what the expected review turnaround is.",
+    "The model addresses the audit sampling rule (≥ 10% of published lessons re-audited per cycle) for a growing corpus.",
+    "The model is reviewed by the Maintainer and at least one external contributor (if available) before publication."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "A committed external contribution and review-scaling model document, covering submission process, correctness gate requirements, reviewer rotation, and audit sampling.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

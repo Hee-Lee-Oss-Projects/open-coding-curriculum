@@ -1,0 +1,41 @@
+{
+  "id": "occ-site-201",
+  "title": "Static-site generator: render lessons + embed in-browser runner (accessible, WCAG-AA aim)",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility",
+    "web-development"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The learner site is the primary delivery mechanism that turns the schema-valid corpus into something a beginner can actually use. It must be accessible (WCAG-AA), render every valid lesson, embed the in-browser runner for zero-install exercises, and fail the build if any exercise has solutionVerified:false. Gated on Gate G1 (≥ 1 partner verbally committed) and the SSG choice from occ-spike-007.",
+  "objective": "Build the static site using the SSG chosen in occ-spike-007, rendering all schema-valid lessons with embedded in-browser Pyodide runner, passing WCAG-AA accessibility checks, and failing the build on any invalid or unverified exercise.",
+  "acceptanceCriteria": [
+    "Every schema-valid lesson is rendered into the static site; build fails if any lesson is schema-invalid.",
+    "Build fails if any exercise has solutionVerified:false or is missing a test suite.",
+    "The in-browser runner is embedded in each lesson page so examples run and exercises grade in-page; no server-side code execution.",
+    "Accessibility checks pass for both prose and the runner/editor: keyboard navigation, correct focus order, alt text on images, sufficient color contrast — WCAG-AA target.",
+    "pnpm build && pnpm test && pnpm lint pass.",
+    "Maintainer reviews before merge."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://www.w3.org/WAI/WCAG21/quickref/"
+  ],
+  "output": "A merged PR adding the complete SSG-based static site that renders all lessons, embeds the in-browser runner, passes accessibility checks, and gates the build on solutionVerified.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

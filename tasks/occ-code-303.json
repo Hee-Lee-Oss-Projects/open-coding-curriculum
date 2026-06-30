@@ -1,0 +1,41 @@
+{
+  "id": "occ-code-303",
+  "title": "CI rule: every exercise has tests + solutionVerified:true + starter-fails; block publish otherwise",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The correctness gate is the most important quality mechanism, but it only works if CI enforces it for every exercise — not just the ones the author remembered to verify. A CI rule that blocks publication of any exercise lacking tests, a reference solution, solutionVerified:true, or a failing starter is the automation backstop that prevents the dominant failure mode (a broken/unsolvable exercise) from reaching learners.",
+  "objective": "Add a CI rule that fails the build for any exercise that lacks a test suite, lacks a reference solution, has solutionVerified:false (or unset), or whose starter code already passes the tests — blocking publication until all four conditions are met.",
+  "acceptanceCriteria": [
+    "CI fails if any exercise is missing a test suite.",
+    "CI fails if any exercise is missing a referenceSolution.",
+    "CI fails if any exercise has solutionVerified:false or solutionVerified not set.",
+    "CI fails if the starter code already passes the exercise's tests (starter-must-fail check).",
+    "All four checks run on every PR and push to main; failure messages identify the offending exercise.",
+    "The rule applies to all languages (Python and JavaScript at minimum).",
+    "pnpm build && pnpm test && pnpm lint pass.",
+    "A test case demonstrates each failure mode triggers the CI block."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "A merged PR adding the four-part CI exercise-completeness and correctness rule, with test cases for each failure mode.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

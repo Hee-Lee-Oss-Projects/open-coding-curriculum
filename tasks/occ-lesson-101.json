@@ -1,0 +1,42 @@
+{
+  "id": "occ-lesson-101",
+  "title": "Python module batch A: input/output, variables, types, arithmetic (4 lessons + exercises)",
+  "project": "open-coding-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). This batch delivers the first four lessons of the Python beginner module, covering the foundational input/output model, variables, core types, and arithmetic. Each lesson must be schema-valid, correctness-verified, and pass technical + pedagogy review. These lessons are the building blocks all subsequent Python lessons depend on.",
+  "objective": "Author four Python beginner lessons covering input/output, variables, basic types (int/float/str/bool), and arithmetic operations — each with original prose, at least one runnable example, at least one graded exercise (solutionVerified:true, starter fails), and passing technical + pedagogy review.",
+  "acceptanceCriteria": [
+    "Four lessons are delivered: (1) input and output with print() and input(), (2) variables and assignment, (3) core types (int, float, str, bool) and type(), (4) arithmetic operators and operator precedence.",
+    "Every lesson has at least 1 runnable example and at least 1 graded exercise with a reference solution (solutionVerified:true by CI) and starter code that does NOT pass the tests.",
+    "All prose is original; at least 2 authoritative cited sources per lesson (Python official docs preferred); no copied or paraphrase-laundered prose.",
+    "Each lesson is schema-valid against the lesson and exercise JSON Schemas.",
+    "Technical correctness is reviewed for each lesson by a reviewer who is not the author.",
+    "Pedagogy checklist is signed off for each lesson by a reviewer who is not the author.",
+    "Examples are neutral/inclusive; prerequisites are honestly stated; single clear objective per lesson."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://docs.python.org/3/tutorial/introduction.html",
+    "https://docs.python.org/3/library/stdtypes.html"
+  ],
+  "output": "Four merged lesson documents (with associated exercise files) for input/output, variables, types, and arithmetic in Python, each schema-valid, correctness-verified, and reviewed.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

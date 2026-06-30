@@ -1,0 +1,44 @@
+{
+  "id": "occ-runner-104",
+  "title": "In-browser Pyodide runner: run examples + grade exercises client-side (lazy-load, offline fallback)",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility",
+    "web-development"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The in-browser runner is the project's headline user-facing feature: zero install, zero account, instant correct feedback. It runs entirely client-side via Pyodide (Python WASM), so no learner code ever reaches a server. The runner must be accessible (keyboard/AT usable) as a precondition for the M2 site build.",
+  "objective": "Build the in-browser Pyodide-based runner that lets learners run runnable examples and submit exercises for client-side grading, with lazy-loading, service-worker caching, and a graceful offline/no-WASM fallback.",
+  "acceptanceCriteria": [
+    "Learner can run any runnable example from a lesson with zero install and zero account; code executes in the browser via Pyodide.",
+    "Learner can submit exercise attempts and receive graded feedback (pass/fail, failure details) entirely client-side; learner code never leaves the device.",
+    "Grading uses the exercise's test suite; failure messages are actionable (not just 'wrong').",
+    "Pyodide runtime is lazy-loaded and cached (service worker or equivalent); subsequent loads do not re-download the full WASM bundle.",
+    "A graceful 'download to run locally' fallback exists where WASM is unavailable or blocked.",
+    "Runner UI is keyboard-navigable and usable with assistive technology (screen reader, focus order correct, no keyboard traps).",
+    "pnpm build && pnpm test && pnpm lint pass."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://pyodide.org/en/stable/",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API",
+    "https://www.w3.org/WAI/WCAG21/quickref/"
+  ],
+  "output": "A merged PR adding the in-browser Pyodide runner component, lazy-load/cache strategy, offline fallback, and accessibility attributes.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "occ-data-105",
+  "title": "Glossary + concept/prerequisite graph for the Python module",
+  "project": "open-coding-curriculum",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "data"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). A machine-readable glossary and concept/prerequisite graph lets the learner site sequence lessons correctly, highlight missing prerequisites, and navigate between concepts. Without it the site is a flat list; with it, learners can find their current level and follow a structured path.",
+  "objective": "Produce a machine-readable glossary of Python beginner terms and a concept/prerequisite graph linking all lessons in the Python module (batches A, B, C), suitable for use by the learner site's navigation and search features.",
+  "acceptanceCriteria": [
+    "Glossary covers all key terms introduced in the Python module (≈ batches A/B/C); each entry has a term, plain-language definition, and the lesson(s) where it is introduced.",
+    "Concept/prerequisite graph is machine-readable (JSON or compatible format) and lists, for each lesson, the concepts it introduces and the concepts/lessons it depends on.",
+    "Graph is acyclic (no circular prerequisites); the graph is validated by a CI check.",
+    "All glossary and graph data is schema-valid; the dataset is published with a CC-BY-4.0 license declaration.",
+    "Maintainer reviews before merge."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "A merged dataset containing the Python module glossary and concept/prerequisite graph in machine-readable format, with provenance and license metadata.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

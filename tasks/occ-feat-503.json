@@ -1,0 +1,41 @@
+{
+  "id": "occ-feat-503",
+  "title": "Local-only progress tracking (browser storage, opt-in, no server/PII)",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility",
+    "web-development"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Progress tracking helps learners know where they left off and what they have completed. The project's no-PII and no-account stance requires that any tracking be entirely local (browser localStorage), opt-in with clear consent messaging, and never transmit learner data to any server.",
+  "objective": "Add opt-in, local-only progress tracking that stores exercise completion status in the learner's own browser storage, shows the learner their progress across the curriculum, and is removable on demand — with no server transmission and no PII collection.",
+  "acceptanceCriteria": [
+    "Progress tracking is opt-in: learners see a clear consent message before any data is stored; the site is fully usable without opting in.",
+    "All progress data is stored exclusively in browser localStorage; no data is transmitted to any server.",
+    "Tracked data is limited to: exercise completion status (pass/fail) and lesson visit history — no learner code, no timestamps with PII potential.",
+    "Learners can view their stored progress and delete it entirely from within the site UI.",
+    "Privacy notice is shown in the tracking UI, explaining what is stored and that it stays on the device.",
+    "pnpm build && pnpm test && pnpm lint pass."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+  ],
+  "output": "A merged PR adding opt-in, local-only progress tracking with consent UI, localStorage-backed storage, and a delete-all option — no server data transmission.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

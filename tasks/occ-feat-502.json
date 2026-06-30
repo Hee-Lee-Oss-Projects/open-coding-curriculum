@@ -1,0 +1,38 @@
+{
+  "id": "occ-feat-502",
+  "title": "Instructor mode: teacher guides + answer keys wrapping the corpus",
+  "project": "open-coding-curriculum",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). Classroom partners need teacher guides and answer keys that wrap the corpus for instructor use, while the learner site remains spoiler-free. This feature unlocks the institutional adoption path (libraries, schools, community orgs) and is enabled by the CC-BY license that allows such adaptation.",
+  "objective": "Produce teacher guides and answer keys for the Python module lessons, formatted for instructor use in classroom or code-club settings, while keeping the public learner site spoiler-free.",
+  "acceptanceCriteria": [
+    "Teacher guides are produced for all Python module lessons (batches A, B, C), including: learning objectives, suggested pacing, common beginner mistakes to watch for, discussion questions, and adaptation notes.",
+    "Answer keys are provided in a separate, instructor-gated format (not on the public learner site) with full reference solutions and pedagogical commentary.",
+    "Teacher guides carry CC-BY-4.0 attribution and are formatted for print/offline use.",
+    "At least one classroom partner reviews the guides for fitness-for-purpose before they are published.",
+    "The learner site's lesson pages remain spoiler-free (no reference solutions or answer keys exposed to learners)."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+  ],
+  "output": "A merged set of teacher guide documents and answer key materials for the Python module, formatted for instructor use and gated from the public learner site.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

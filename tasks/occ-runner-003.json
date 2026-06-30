@@ -1,0 +1,42 @@
+{
+  "id": "occ-runner-003",
+  "title": "Define autograder runner contract + build the sandboxed CI correctness backend (no network, FS read-only, CPU/mem/time caps, non-root)",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The correctness gate is the single most important quality mechanism in the curriculum: every exercise's reference solution must be proven to pass its test suite in CI before it can publish, and the starter code must fail those same tests. Without a working, sandboxed runner contract this gate cannot exist and the correctness guarantee collapses.",
+  "objective": "Define the language-agnostic runner contract (run(code, tests, limits) → { passed, failures[], stdout, durationMs, resourceUse }) and implement the sandboxed CI correctness backend with a Python adapter, so that CI can set solutionVerified:true when the reference solution passes and fail the build when it does not.",
+  "acceptanceCriteria": [
+    "Runner contract is defined: run(code, tests, limits) → { passed: boolean, failures: string[], stdout: string, durationMs: number, resourceUse: object }; contract is language-agnostic and documented.",
+    "A Python adapter implements the contract and executes code + tests in the CI sandbox.",
+    "CI sandbox enforces: no network access, read-only filesystem, CPU and memory caps, wall-clock time limit, and non-root execution; a solution that hangs, exceeds limits, or touches the network fails the gate.",
+    "CI sets solutionVerified:true only when the reference solution passes its tests.",
+    "CI asserts starter code does NOT already pass the tests (starter-must-fail check).",
+    "pnpm build && pnpm test && pnpm lint pass.",
+    "A solution that attempts network access, exceeds resource limits, or hangs is demonstrated to fail the gate in a test case."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://docs.python.org/3/library/subprocess.html",
+    "https://pyodide.org/en/stable/"
+  ],
+  "output": "A merged PR adding the runner contract definition, the Python adapter, and the sandboxed CI correctness backend, with documentation of the contract interface and sandbox constraints.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

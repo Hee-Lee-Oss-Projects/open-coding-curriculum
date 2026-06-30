@@ -1,0 +1,41 @@
+{
+  "id": "occ-data-203",
+  "title": "Publish versioned CC-BY corpus (lessons + exercises + tests) + provenance manifest",
+  "project": "open-coding-curriculum",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "data"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The versioned CC-BY corpus dataset is what makes the project reusable and forkable by third parties — courses, offline bundles, apps. It must include per-asset license and provenance, the solutionVerified status per exercise, and the pinned runtime version so correctness is reproducible. This is also the fallback 'delivered' artifact if Gate G1 is a no-go.",
+  "objective": "Export and publish the complete lesson + exercise + test corpus as a versioned, machine-readable dataset with per-asset provenance (license, isOriginal, source URLs), solutionVerified status, and pinned runtime versions.",
+  "acceptanceCriteria": [
+    "Complete corpus is exported as a single versioned dataset (version number and date in filename/metadata).",
+    "Every lesson carries: prose license (CC-BY-4.0), authors, and sources.",
+    "Every exercise carries: code license (MIT or CC0), isOriginal flag, source URL (if not original), solutionVerified status, and pinned runtime version.",
+    "A provenance manifest lists every asset with its license, origin, and verification status.",
+    "A published attribution string is included so downstream reusers know how to attribute the corpus.",
+    "Dataset is published to a stable, citable location (e.g. repository release or dataset host) with a DOI or equivalent stable URL.",
+    "Maintainer reviews before publication."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "output": "A versioned, publicly available CC-BY dataset containing the full lesson + exercise + test corpus with provenance manifest, attribution string, and license declarations.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

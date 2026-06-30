@@ -1,0 +1,41 @@
+{
+  "id": "occ-code-304",
+  "title": "Execution sandbox hardening + documentation (CI: no-net/RO-FS/limits/non-root; learner: WASM isolation, caps, graceful timeout)",
+  "project": "open-coding-curriculum",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "programming",
+    "computer-science",
+    "open-education",
+    "accessibility"
+  ],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-coding-curriculum is an open CC-BY (prose) / MIT (code) curriculum of beginner programming lessons with graded, runnable exercises across languages. Every exercise carries a reference solution proven correct in CI (solutionVerified:true), learner code runs zero-install in-browser via WASM, and all content is machine-readable structured data so third parties can build on it. The project targets absolute beginners — self-learners, public-library patrons, under-resourced school students, career-changers — and operates under a donated-compute lane with no server-side execution of learner code and no partner confirmed yet (verifiedNeed:false). The security model depends entirely on the two execution environments being provably safe: the CI correctness backend must not allow a reference solution to reach the network or exceed resource limits, and the in-browser WASM runner must not allow a learner's exercise to hang or abuse their browser. Hardening and documenting both is a M3 exit gate.",
+  "objective": "Harden and document both execution sandboxes: (1) the CI correctness backend — no network, read-only FS, CPU/memory/wall-clock caps, non-root; (2) the in-browser WASM runner — WASM isolation, resource caps, graceful timeout on runaway code.",
+  "acceptanceCriteria": [
+    "CI correctness backend is verified to run with no network access (outbound blocked), read-only filesystem, CPU and memory caps, wall-clock time limit, and non-root user.",
+    "A reference solution attempting network access is demonstrated to fail the CI gate.",
+    "A reference solution exceeding resource limits is demonstrated to fail the CI gate.",
+    "In-browser WASM runner enforces resource caps: CPU time limit terminates runaway JS/Python without hanging the learner's browser tab.",
+    "Graceful timeout message is shown to the learner when a timeout occurs; no silent hang.",
+    "Both sandboxes are documented in a security/sandbox doc committed to the repository: constraints, how they are enforced, and how to verify them.",
+    "pnpm build && pnpm test && pnpm lint pass."
+  ],
+  "resources": [
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://pyodide.org/en/stable/usage/webworker.html"
+  ],
+  "output": "A merged PR with hardened sandbox configurations for both execution environments and a committed sandbox security documentation document.",
+  "requestor": "",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
