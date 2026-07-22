@@ -28,9 +28,9 @@
     "The public URL is recorded in the repository README and in the corpus provenance manifest."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts",
     "https://creativecommons.org/licenses/by/4.0/"
   ],
   "output": "A merged PR and a live learner site at a public URL with automated deployment, HTTPS, and canonical attribution on all lesson pages.",

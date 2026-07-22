@@ -6,7 +6,7 @@
 
 **Definition of shipped:** **Positioning (one line).** open-coding-curriculum is the *open, runnable, auto-graded* path from > "never written a line of code" to "can read and write small programs" — original CC-BY lessons, > MIT-licensed runnable examples, and graded exercises whose reference solutions are
 
-This is an **Elyos** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/elyos
+This is an **Hee-Lee Oss** good-deed project. Contributors pull a task, do it with their own coding agent, and open a PR. Platform: https://github.com/jdev1977/hee-lee-oss
 
 ## Plan
 - [PLAN.md](./PLAN.md) — robust enterprise plan (vision, architecture, roadmap, risks; includes an applied-improvements appendix + review sign-off)
@@ -15,8 +15,8 @@ This is an **Elyos** good-deed project. Contributors pull a task, do it with the
 
 ## Contribute
 ```bash
-elyos browse
-elyos next --repo Elyos-Projects/open-coding-curriculum --no-fork
+hee-lee-oss browse
+hee-lee-oss next --repo Hee-Lee-Oss-Projects/open-coding-curriculum --no-fork
 ```
 
 ## Licensing & review

@@ -31,7 +31,7 @@ has runnable examples and at least one **graded exercise** whose **reference sol
 against its own test suite in CI**, so a learner gets correct, instant feedback and a maintainer
 can guarantee the exercise is solvable and the answer is right.
 
-Two properties make this an ideal fit for the Elyos donated lane. First, **each lesson + exercise
+Two properties make this an ideal fit for the Hee-Lee Oss donated lane. First, **each lesson + exercise
 is a bounded, forkable unit** — near-unlimited fan-out with consistent quality. Second, the
 **correctness gate is automatable**: "the reference solution passes its tests, in a sandbox, with
 no network" is a machine-checkable invariant that catches the dominant failure mode (a broken or
@@ -109,7 +109,7 @@ correctness-verified, zero-install alternative.
   **our** servers (execution is client-side by design — see Security).
 - **Not** advanced/specialist tracks (ML, systems, security exploitation) in the planned phases —
   beginner fundamentals only.
-- **Not** a teacher of offensive security, malware, scraping-for-abuse, or anything on the Elyos
+- **Not** a teacher of offensive security, malware, scraping-for-abuse, or anything on the Hee-Lee Oss
   refusal list; security topics, if covered, are **defensive only**.
 - **Not** an account system, social platform, or collector of learner personal data.
 
@@ -278,7 +278,7 @@ allow-list (see Licensing); any non-original asset additionally requires a verif
 - **Provenance model:** a machine-readable `sources[]` per lesson/exercise and a provenance block
   per media asset, both validated and published with the dataset so reuse is auditable.
 - **Refusal compliance:** any request to author malware/exploit/surveillance/abuse content, or
-  offensive-security "how to attack" lessons, is refused and flagged per Elyos guardrails —
+  offensive-security "how to attack" lessons, is refused and flagged per Hee-Lee Oss guardrails —
   regardless of framing.
 
 ## Quality, review & risk gates
@@ -321,7 +321,7 @@ advice); if a proposed lesson ever implied high-stakes advice it would be out of
 **Definition of Shipped (project).** A published, browsable curriculum with a growing,
 peer-reviewed, correctness-verified set of lessons+exercises that a learner can run **with zero
 install and zero account**, **adopted by at least one education partner**, with a downloadable
-CC-BY corpus. Per Elyos' "delivered, not merged" bar, a lesson is *delivered* only when:
+CC-BY corpus. Per Hee-Lee Oss' "delivered, not merged" bar, a lesson is *delivered* only when:
 acceptance criteria met + schema-valid + **`solutionVerified:true`** + CI green + technical &
 pedagogy review passed + published on the live site + reachable by the intended beneficiaries.
 
@@ -406,7 +406,7 @@ M0 task.
 
 ## Dependencies & integrations
 
-- **Elyos pieces:** Task JSON schema (`packages/schema`), the CLI workspace-prep + PR flow (donated
+- **Hee-Lee Oss pieces:** Task JSON schema (`packages/schema`), the CLI workspace-prep + PR flow (donated
   lane), the governance/review process, and the registry.
 - **External tooling:** chosen SSG (Astro/Eleventy — TBD by spike); AJV for validation; **Pyodide**
   (Python WASM) and the browser JS engine for the runner; established WASM toolchains for later
@@ -450,7 +450,7 @@ M0 task.
 - **Threat surface otherwise small:** a static site + structured data; no accounts, no server-side
   learner state, no PII collection.
 - **Secrets:** none required for content work; any CI/deploy tokens live in CI secrets only and are
-  never written into lessons, logs, receipts, or commits (per Elyos rules).
+  never written into lessons, logs, receipts, or commits (per Hee-Lee Oss rules).
 - **PII:** none collected or stored. No learner-code upload (client-side execution). If
   progress-tracking is ever added it must be **local-only** (browser storage), opt-in, with no
   server collection.
@@ -499,10 +499,10 @@ M0 task.
 
 ## References
 
-- `C:\code\elyos\CLAUDE.md` — Elyos work rules, lanes, quality bar, refusal guardrails.
-- `C:\code\elyos\docs\good-deed-definition.md` — the 5 good-deed criteria + risk tiers.
-- `C:\code\elyos\packages\schema\src\schemas.ts` — Task JSON schema (TASKS.md maps to it).
-- `C:\code\elyos\planning\ROADMAP.md` — portfolio roadmap (this project: Track 3, low risk).
+- `C:\code\hee-lee-oss\CLAUDE.md` — Hee-Lee Oss work rules, lanes, quality bar, refusal guardrails.
+- `C:\code\hee-lee-oss\docs\good-deed-definition.md` — the 5 good-deed criteria + risk tiers.
+- `C:\code\hee-lee-oss\packages\schema\src\schemas.ts` — Task JSON schema (TASKS.md maps to it).
+- `C:\code\hee-lee-oss\planning\ROADMAP.md` — portfolio roadmap (this project: Track 3, low risk).
 - `governance/proposals/open-coding-curriculum.md` — project proposal (**TO BE WRITTEN**).
 - Pyodide — Python scientific stack compiled to WebAssembly (in-browser runner).
 - Creative Commons Attribution 4.0 (CC-BY-4.0) — prose license. MIT / CC0 — code license.
@@ -543,7 +543,7 @@ not aspirational.
     that, on no-partner, pivots to corpus + CC-BY dataset + **offline runnable bundle** rather than
     halting — keeping "delivered, not merged" honest. *(Roadmap; Risks; TASKS gate.)*
 12. **Ownership gate before M0 exit.** Made a named Maintainer a hard M0 exit gate with a target
-    date (2026-07-12), mirroring Elyos accountability practice. *(Header; Governance; M0 DoD.)*
+    date (2026-07-12), mirroring Hee-Lee Oss accountability practice. *(Header; Governance; M0 DoD.)*
 13. **Refusal guardrail specialized to coding.** Spelled out that malware/exploit/offensive-
     security/abuse-scraping lessons are refused and security topics are defensive-only. *(Non-goals;
     Licensing; Risks.)*
@@ -613,6 +613,6 @@ schema). Findings and fixes:**
   mitigated by Gate G1 fallback, and (b) runtime drift breaking verified solutions → mitigated by
   pinned runtimes + the M4 re-verification cadence. Both are owned and tracked.
 
-**Sign-off:** Plan is internally consistent, schema-aligned, and faithful to Elyos guardrails.
+**Sign-off:** Plan is internally consistent, schema-aligned, and faithful to Hee-Lee Oss guardrails.
 **Outstanding human decisions:** name the Maintainer (by 2026-07-12), secure an education partner,
 confirm first/third language ordering, and write the formal `governance/proposals/` proposal.

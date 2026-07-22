@@ -27,9 +27,9 @@
     "The learner site's lesson pages remain spoiler-free (no reference solutions or answer keys exposed to learners)."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts"
   ],
   "output": "A merged set of teacher guide documents and answer key materials for the Python module, formatted for instructor use and gated from the public learner site.",
   "requestor": "",

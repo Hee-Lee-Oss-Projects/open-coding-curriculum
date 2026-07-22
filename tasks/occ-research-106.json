@@ -26,9 +26,9 @@
     "Honest status is recorded: verifiedNeed flips to true only on written partner confirmation; until then it remains false."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts",
     "https://carpentries.org/"
   ],
   "output": "A committed document containing the reusable outreach packet and a log of at least one partner conversation with outcome and next steps.",

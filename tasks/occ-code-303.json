@@ -30,9 +30,9 @@
     "A test case demonstrates each failure mode triggers the CI block."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts"
   ],
   "output": "A merged PR adding the four-part CI exercise-completeness and correctness rule, with test cases for each failure mode.",
   "requestor": "",

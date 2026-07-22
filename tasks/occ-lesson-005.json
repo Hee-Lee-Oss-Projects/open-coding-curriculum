@@ -31,9 +31,9 @@
     "Examples are neutral/inclusive; prerequisites are honestly stated; single clear objective."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts",
     "https://docs.python.org/3/tutorial/introduction.html",
     "https://docs.python.org/3/library/functions.html#print"
   ],

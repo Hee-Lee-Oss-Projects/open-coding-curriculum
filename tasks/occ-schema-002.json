@@ -23,9 +23,9 @@
     "pnpm build && pnpm test && pnpm lint pass."
   ],
   "resources": [
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
-    "C:\\code\\elyos\\planning\\projects\\open-coding-curriculum\\PLAN.md",
-    "C:\\code\\elyos\\docs\\good-deed-definition.md"
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts",
+    "C:\\code\\hee-lee-oss\\planning\\projects\\open-coding-curriculum\\PLAN.md",
+    "C:\\code\\hee-lee-oss\\docs\\good-deed-definition.md"
   ],
   "output": "A merged PR adding the lesson + exercise JSON Schemas, AJV-based validation script, and CI wiring, with the schemas documented in the repo.",
   "requestor": "",

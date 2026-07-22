@@ -29,9 +29,9 @@
     "pnpm build && pnpm test && pnpm lint pass."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts",
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
   ],
   "output": "A merged PR adding opt-in, local-only progress tracking with consent UI, localStorage-backed storage, and a delete-all option — no server data transmission.",

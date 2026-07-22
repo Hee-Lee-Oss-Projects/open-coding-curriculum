@@ -26,9 +26,9 @@
     "At least 1 external reuse of the CC-BY corpus is documented (a course, offline pack, or downstream app citing the corpus)."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts"
   ],
   "output": "A committed document containing written partner adoption confirmation, the learner use report, and documentation of at least one external reuse of the CC-BY corpus.",
   "requestor": "",

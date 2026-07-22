@@ -27,9 +27,9 @@
     "A summary of the re-review cycle (lessons reviewed, pass/fail, issues found) is committed to the maintenance log."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts"
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts"
   ],
   "output": "A committed maintenance log documenting the re-review cycle outcomes, updated lastReviewed dates in lesson files, and any follow-up fix tasks created.",
   "requestor": "",

@@ -142,7 +142,7 @@ delivery story.** That four-way intersection is the defensible gap.
 3. **Offline-first, low-resource-first delivery** (a downloadable, network-free, still-graded
    bundle with a stated MB/RAM/cold-load budget). Promote from fallback to flagship.
 4. **Content-as-data / curriculum engine** — a validated corpus + reusable auto-graded runner that
-   other Elyos projects and outsiders can fork (see §7).
+   other Hee-Lee Oss projects and outsiders can fork (see §7).
 5. **Accessibility of the *runner*, not just prose** — an AT-usable code editor + screen-reader-
    friendly grading output, which essentially no competitor does well.
 6. **No-account, no-PII, near-zero-server-cost** — sustainability and privacy as differentiators,
@@ -215,7 +215,7 @@ delivery story.** That four-way intersection is the defensible gap.
 9. **Sharpen the public positioning to the four-way wedge** ("open + remixable + provably-correct +
    offline") on the landing page and proposal; don't let it read as "another free course."
 10. **Ship a tiny "fork-an-exercise" template + CONTRIBUTING with the correctness gate baked in**,
-    so external contributors and other Elyos projects can add verified exercises without bespoke
+    so external contributors and other Hee-Lee Oss projects can add verified exercises without bespoke
     onboarding (scales the bus factor and seeds the engine in §7).
 
 ---
@@ -239,7 +239,7 @@ delivery story.** That four-way intersection is the defensible gap.
   `list_lessons`, `get_exercise`, `run_and_grade(code, exerciseId)`, `next_concept(prereqGraph)`.
   This lets any agent (a tutor bot, a partner's app, Claude itself) *query lessons and grade
   learner code through the verified sandbox* without re-implementing it — turning the curriculum
-  into callable infrastructure and a clean integration point for the Elyos donated lane.
+  into callable infrastructure and a clean integration point for the Hee-Lee Oss donated lane.
 - **`decodable-readers` / `literacy-from-zero` synergy.** Shares the offline-bundle + accessibility
   + plain-language tooling; cross-pollinate the accessibility and offline-packaging work.
 

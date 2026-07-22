@@ -28,9 +28,9 @@
     "Partner confirms the chosen topic set is relevant to their learners before authoring begins."
   ],
   "resources": [
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/PLAN.md",
-    "https://github.com/Elyos-Projects/open-coding-curriculum/blob/main/TASKS.md",
-    "C:\\code\\elyos\\packages\\schema\\src\\schemas.ts",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/PLAN.md",
+    "https://github.com/Hee-Lee-Oss-Projects/open-coding-curriculum/blob/main/TASKS.md",
+    "C:\\code\\hee-lee-oss\\packages\\schema\\src\\schemas.ts",
     "https://docs.python.org/3/tutorial/inputoutput.html"
   ],
   "output": "A set of merged lesson documents for additional beginner topics (file I/O, data basics, and a complete project), each schema-valid, correctness-verified, and reviewed.",
